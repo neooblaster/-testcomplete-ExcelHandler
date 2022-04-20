@@ -48,6 +48,9 @@ let ProdOrd   = ExcelHdl.ProdOrd(2);   // Col C -> Prod Ord  -> Line 2 = 2000146
 
 // Updating Cell
 ExcelHdl.Quantity(2, 12);   // Col E -> Quantity -> Line 2 become 12 instead of 6
+
+// Save modifications
+ExcelHdl.save();
 ````
 
 
@@ -133,13 +136,17 @@ Column definition is applied for the current workbook sheet.
 If you switch to a new sheet. You have to repeat 
 the definition (if needed).
 
+**Note** : Any modifications made on Excel regarding columns order will 
+affect definitions set with method ``cols()``.
+(if `ExcelColumnChar` is hardcoded). 
+
 
 ### Getting Cell data
 
 You can get any data of the Excel by calling the generated
 method thanks to the header line (or you overwrite definition
-thanks to `cols()`). Dynamic method accept **one** argument which
-is the Excel Line.
+thanks to `cols()`). Dynamic method accepts **one** argument which
+is the **Excel Line**.
 
 ````js
 let sProdOrderNr = ExcelHdl.ProdOrder(2);
@@ -150,9 +157,10 @@ let sProdOrderNr = ExcelHdl.ProdOrder(2);
 
 You can set any data of the Excel by calling the generated
 method thanks to the header line (or you overwrite definition
-thanks to `cols()`). Dynamic method accept **two** arguments which
-the first one stands for the Excel Line and the second one stands for the
-value to enter in the cell.
+thanks to `cols()`). 
+Dynamic method accepts **two** arguments in this case where
+the first one stands for the **Excel Line** and the second one stands for the
+**value** to enter in the cell.
 
 ````js
 ExcelHdl.Quantity(2, 12);
@@ -172,7 +180,8 @@ let aExcelData = ExcelHdl.table(); // Return TableJs Array
 Notes :
 
 ``table()`` method returns an `Array` which has all natives JavaScript methods.
-But in reality, the object is ``TableJs`` instance where all feature are
+But in reality, the returned object is an instance of ``TableJs`` 
+where all features are
 documented here : [TestComplete/Core/TableJs](https://gitlab.viseo.com/testcomplete/core/tablejs)
 
 
