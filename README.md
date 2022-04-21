@@ -21,6 +21,8 @@ if you have **nodejs** installed on your computer.
 npm install @testcomplete/excelhandler
 ````
 
+
+
 Once you get the library, in **TestComplete**
 you have to add the following script `./ExcelHandler.sj`
 in your project to be able requiring the constructor ``ExcelHandler``.
