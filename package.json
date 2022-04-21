@@ -5,7 +5,7 @@
     "main": "ExcelHandler.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "postinstall": "cp node_modules/@neooblaster/tablejs/bin/TableJs.js ./TableJs.js"
+        "postinstall": "cp ./node_modules/@neooblaster/tablejs/bin/TableJs.js ./TableJs.js"
     },
     "keywords": [
         "TestComplete",
@@ -16,6 +16,6 @@
     "author": "Nicolas DUPRE",
     "license": "ISC",
     "dependencies": {
-        "@neooblaster/tablejs": "^0.1.10"
+        "@neooblaster/tablejs": "^0.1.12"
     }
 }

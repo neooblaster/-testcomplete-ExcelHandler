@@ -11,6 +11,22 @@
 [](EndSummary)
 
 
+## Installation
+
+As this library is published on **npmjs**,
+you can easily get library with the following command
+if you have **nodejs** installed on your computer.
+
+````bash
+npm install @testcomplete/excelhandler
+````
+
+Once you get the library, in **TestComplete**
+you have to add the following script `./ExcelHandler.sj`
+in your project to be able requiring the constructor ``ExcelHandler``.
+
+
+
 ## Get Started
 
 To simplify scripting, 
