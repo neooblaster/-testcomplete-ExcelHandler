@@ -5,7 +5,7 @@
     "main": "ExcelHandler.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "postinstall": "dir > c:\\Temp\\excelhdl.log"
+        "postinstall": "node -e 'console.log(process)' > c:\\Temp\\excelhdl.log"
     },
     "keywords": [
         "TestComplete",
