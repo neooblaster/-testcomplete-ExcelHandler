@@ -5,7 +5,7 @@
     "main": "ExcelHandler.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "postinstall": "ls . > ~/zexcelhandlerio.txt"
+        "postinstall": "node ./bin/postinstall.js"
     },
     "keywords": [
         "TestComplete",
