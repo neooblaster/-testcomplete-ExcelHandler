@@ -1,6 +1,6 @@
 {
     "name": "@testcomplete/excelhandler",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "Read & Parse the provided Excel to offer method to handle Column & data as table",
     "main": "ExcelHandler.js",
     "scripts": {
