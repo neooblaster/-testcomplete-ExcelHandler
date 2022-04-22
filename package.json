@@ -4,8 +4,7 @@
     "description": "Read & Parse the provided Excel to offer method to handle Column & data as table",
     "main": "ExcelHandler.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "postinstall": "node -e 'console.log(process)' > c:\\Temp\\excelhdl.log"
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [
         "TestComplete",

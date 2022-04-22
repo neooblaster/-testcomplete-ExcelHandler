@@ -11,7 +11,7 @@
 [](EndSummary)
 
 
-## Installation
+## ExcelHandler Setup for TestComplete
 
 As this library is published on **npmjs**,
 you can easily get library with the following command
@@ -21,15 +21,37 @@ if you have **nodejs** installed on your computer.
 npm install @testcomplete/excelhandler
 ````
 
+**npm** installs the package with it dependencies locally in the folder
+where you type the command.
+
+I advise to create a dedicated folder for your scripts libraries (Lib & Functions)
+
+![NPM Install Library](docs/img/npm_install.png)
+
+In **TestComplete**, you will have to add the two following file
+to your project to be able **require** them in your scripts :
+
+* [Dependency] : ``./node_modules/@neooblaster/tablejs/Bin/Table.js``
+* [Package] : ``./node_modules/@testcomplete/excelhandler/ExcelHandler.js``
+
+![Add existing script in TestComplete](docs/img/tc_add_script.png)
+
+![Add existing script in TestComplete](docs/img/tc_add_script_select_script.png)
+
+![Add existing script in TestComplete](docs/img/tc_add_script_added.png)
+
+Once Files (Library and its dependencies) are added in TestComplete,
+now you are able to required library ExcelHandler in any scripts.
+
+![Requiring ExcelHandler](docs/img/tc_required_excelhandler.png)
+
+You do not have to require ``TableJs``, because ``ExcelHandler`` does itself.
 
 
-Once you get the library, in **TestComplete**
-you have to add the following script `./ExcelHandler.sj`
-in your project to be able requiring the constructor ``ExcelHandler``.
 
 
 
-## Get Started
+## Get Started with ExcelHandler
 
 To simplify scripting, 
 **Excel** file must have an header line
