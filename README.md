@@ -1,14 +1,20 @@
 # TestComplete - ExcelHandler Interface
 
-* **Version** : ``v0.2.0``
-* **Dependancies** :
-    * ``TableJs`` : [TestComplete/Core/TableJs](https://gitlab.viseo.com/testcomplete/core/tablejs)
+> An interface to perform Keyboard (and some Mouse) actions in an easier way.
+
+* **Version** : ``v0.3.0``
+* **Script** : ``./node_modules/@testcomplete/excelhandler/ExcelHandler.js``
+* **Dependencies** :
+    * ``TableJs`` : [@neooblaster/tablejs](https://www.npmjs.com/package/@neooblaster/tablejs)
+        * ``./node_modules/@neooblaster/tablejs/Bin/Table.js``
+
 
 
 ## Summary
 
 [](BeginSummary)
 [](EndSummary)
+
 
 
 ## ExcelHandler Setup for TestComplete
@@ -21,33 +27,14 @@ if you have **nodejs** installed on your computer.
 npm install @testcomplete/excelhandler
 ````
 
-**npm** installs the package with it dependencies locally in the folder
-where you type the command.
+Please confer to this documentation to add script in TestComplete :
 
-I advise to create a dedicated folder for your scripts libraries (Lib & Functions)
+Script List for the setup :
 
-![NPM Install Library](docs/img/npm_install.png)
+* ``./node_modules/@neooblaster/tablejs/Bin/Table.js``
+* ``./node_modules/@testcomplete/excelhandler/ExcelHandler.js``
 
-In **TestComplete**, you will have to add the two following file
-to your project to be able **require** them in your scripts :
-
-* [Dependency] : ``./node_modules/@neooblaster/tablejs/Bin/Table.js``
-* [Package] : ``./node_modules/@testcomplete/excelhandler/ExcelHandler.js``
-
-![Add existing script in TestComplete](docs/img/tc_add_script.png)
-
-![Add existing script in TestComplete](docs/img/tc_add_script_select_script.png)
-
-![Add existing script in TestComplete](docs/img/tc_add_script_added.png)
-
-Once Files (Library and its dependencies) are added in TestComplete,
-now you are able to required library ExcelHandler in any scripts.
-
-![Requiring ExcelHandler](docs/img/tc_required_excelhandler.png)
-
-You do not have to require ``TableJs``, because ``ExcelHandler`` does itself.
-
-
+[@testcomplete/testcompletelibrarysetup](https://www.npmjs.com/package/@testcomplete/testcompletelibrarysetup)
 
 
 
@@ -94,6 +81,7 @@ ExcelHdl.save();
 ````
 
 
+
 ## CheatSheet
 
 ### Main Information
@@ -111,6 +99,7 @@ propose valid method name.
 * All method presented in the current cheat sheet can be chained.
 
 
+
 ### Loading Library
 
 * Instruction to insert at the beginning of the script to get
@@ -119,6 +108,7 @@ constructor ``ExcelHandler`` :
 ````js
 let ExcelHandler = require('ExcelHandler');
 ````
+
 
 ### Instantiation
 
@@ -129,6 +119,7 @@ let ExcelHdl = new ExcelHandler('/path/to/excel/file');
 ````
 
 
+
 ### Initialization
 
 From your ``ExcelHandler`` instance, open the **Excel File** : 
@@ -136,6 +127,7 @@ From your ``ExcelHandler`` instance, open the **Excel File** :
 ````js
 ExcelHdl.open();
 ````
+
 
 
 ### Switching between Workbook sheets
@@ -148,6 +140,7 @@ ExcelHdl.sheet('YouExcelSheetName');
 ````
 
 
+
 ### Specifying the data starting line
 
 If your data does not start at line ``2``,
@@ -156,6 +149,7 @@ use the following method to set the new line :
 ````js
 ExcelHdl.rowStartAt(3); // where 3 is the line number
 ````
+
 
 
 ### Defining the column name
@@ -181,6 +175,7 @@ affect definitions set with method ``cols()``.
 (if `ExcelColumnChar` is hardcoded). 
 
 
+
 ### Getting Cell data
 
 You can get any data of the Excel by calling the generated
@@ -191,6 +186,7 @@ is the **Excel Line**.
 ````js
 let sProdOrderNr = ExcelHdl.ProdOrder(2);
 ````
+
 
 
 ### Updating Cell data
@@ -205,6 +201,7 @@ the first one stands for the **Excel Line** and the second one stands for the
 ````js
 ExcelHdl.Quantity(2, 12);
 ````
+
 
 
 ### Getting the Excel data as table
@@ -222,7 +219,8 @@ Notes :
 ``table()`` method returns an `Array` which has all natives JavaScript methods.
 But in reality, the returned object is an instance of ``TableJs`` 
 where all features are
-documented here : [TestComplete/Core/TableJs](https://gitlab.viseo.com/testcomplete/core/tablejs)
+documented here : [@neooblaster/tablejs](https://www.npmjs.com/package/@neooblaster/tablejs)
+
 
 
 ### Closing / Saving the Excel file
