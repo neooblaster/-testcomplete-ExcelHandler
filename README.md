@@ -5,7 +5,7 @@
 * **Version** : ``v0.3.0``
 * **Script** : ``./node_modules/@testcomplete/excelhandler/ExcelHandler.js``
 * **Dependencies** :
-    * ``TableJs`` : [@neooblaster/tablejs](https://www.npmjs.com/package/@neooblaster/tablejs)
+    * ``TableJs`` : [TestComplete/Core/TableJs](https://gitlab.viseo.com/testcomplete/core/tablejs)
         * ``./node_modules/@neooblaster/tablejs/Bin/Table.js``
 
 
@@ -34,7 +34,7 @@ Script List for the setup :
 * ``./node_modules/@neooblaster/tablejs/Bin/Table.js``
 * ``./node_modules/@testcomplete/excelhandler/ExcelHandler.js``
 
-[@testcomplete/testcompletelibrarysetup](https://www.npmjs.com/package/@testcomplete/testcompletelibrarysetup)
+[TestComplete Library Setup](https://gitlab.viseo.com/testcomplete/documentations/testcompletelibrarysetup)
 
 
 
@@ -219,7 +219,7 @@ Notes :
 ``table()`` method returns an `Array` which has all natives JavaScript methods.
 But in reality, the returned object is an instance of ``TableJs`` 
 where all features are
-documented here : [@neooblaster/tablejs](https://www.npmjs.com/package/@neooblaster/tablejs)
+documented here : [TestComplete/Core/TableJs](https://gitlab.viseo.com/testcomplete/core/tablejs)
 
 
 
