@@ -2,10 +2,11 @@
 
 > An interface to perform Keyboard (and some Mouse) actions in an easier way.
 
-* **Version** : ``v0.3.0``
+* **Version** : ``v0.3.2``
+* **Compatibility** : **TestComplete** only
 * **Script** : ``./node_modules/@testcomplete/excelhandler/ExcelHandler.js``
 * **Dependencies** :
-    * ``TableJs`` : [TestComplete/Core/TableJs](https://gitlab.viseo.com/testcomplete/core/tablejs)
+    * ``TableJs`` : [@neooblaster/tablejs](https://www.npmjs.com/package/@neooblaster/tablejs)
         * ``./node_modules/@neooblaster/tablejs/Bin/Table.js``
 
 
@@ -13,6 +14,21 @@
 ## Summary
 
 [](BeginSummary)
+* [Summary](#summary)
+* [ExcelHandler Setup for TestComplete](#excelhandler-setup-for-testcomplete)
+* [Get Started with ExcelHandler](#get-started-with-excelhandler)
+* [CheatSheet](#cheatsheet)
+    * [Main Information](#main-information)
+    * [Loading Library](#loading-library)
+    * [Instantiation](#instantiation)
+    * [Initialization](#initialization)
+    * [Switching between Workbook sheets](#switching-between-workbook-sheets)
+    * [Specifying the data starting line](#specifying-the-data-starting-line)
+    * [Defining the column name](#defining-the-column-name)
+    * [Getting Cell data](#getting-cell-data)
+    * [Updating Cell data](#updating-cell-data)
+    * [Getting the Excel data as table](#getting-the-excel-data-as-table)
+    * [Closing / Saving the Excel file](#closing-saving-the-excel-file)
 [](EndSummary)
 
 
@@ -34,7 +50,7 @@ Script List for the setup :
 * ``./node_modules/@neooblaster/tablejs/Bin/Table.js``
 * ``./node_modules/@testcomplete/excelhandler/ExcelHandler.js``
 
-[TestComplete Library Setup](https://gitlab.viseo.com/testcomplete/documentations/testcompletelibrarysetup)
+[@testcomplete/testcompletelibrarysetup](https://www.npmjs.com/package/@testcomplete/testcompletelibrarysetup)
 
 
 
@@ -219,7 +235,7 @@ Notes :
 ``table()`` method returns an `Array` which has all natives JavaScript methods.
 But in reality, the returned object is an instance of ``TableJs`` 
 where all features are
-documented here : [TestComplete/Core/TableJs](https://gitlab.viseo.com/testcomplete/core/tablejs)
+documented here : [@neooblaster/tablejs](https://www.npmjs.com/package/@neooblaster/tablejs)
 
 
 
