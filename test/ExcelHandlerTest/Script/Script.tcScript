@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<folder name="Library">
+			<child name="ExcelHandler" key="{2A951066-18F2-41E4-94B8-8F2BDBE9A43E}" path="..\..\..\ExcelHandler.js" />
+			<child name="TableJs" key="{01413756-9CF7-497B-9239-C3BEEF705893}" path="..\..\Scripts\node_modules\@neooblaster\tablejs\bin\TableJs.js" />
+		</folder>
+		<folder name="Scripts">
+			<child name="UpdateProdOrderQuantity" key="{7EAB13D2-383C-4286-8718-00070BA94357}" path="UpdateProdOrderQuantity.js" />
+		</folder>
+	</children>
+</Root>

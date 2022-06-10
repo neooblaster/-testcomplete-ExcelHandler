@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="15.0" key="{498BB6DA-7FF9-4458-8F5A-ACF10FD35A8A}">
+	<children>
+		<child name="ExcelHandlerTest" key="{25CADB57-0B32-4131-8148-D3259295F80E}" path="ExcelHandlerTest\ExcelHandlerTest.mds" />
+	</children>
+	<testItems key="{C149B798-7BBC-4178-AFF5-B6DBAC364407}">
+		<children>
+			<testItem key="{25CADB57-0B32-4131-8148-D3259295F80E}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{F3342790-7A81-466E-ACF5-927907D9734B}" />
+	<analysis key="{AF5CDEA2-A217-41BF-B9CB-ADC66DA4CD13}" />
+	<scc key="{00000000-0000-0000-0000-000000000000}" name="">
+		<data />
+	</scc>
+</Root>

@@ -1,7 +1,7 @@
 const TableJs = require('TableJs');
 
 /**
- * Version v0.3.1
+ * Version v0.3.3
  *
  * @author: Nicolas DUPRE (VISEO)
  *

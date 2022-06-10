@@ -2,12 +2,13 @@
 
 > An interface to perform Keyboard (and some Mouse) actions in an easier way.
 
-* **Version** : ``v0.3.2``
+* **Version** : ``v0.3.3``
 * **Compatibility** : **TestComplete** only
 * **Script** : ``./node_modules/@testcomplete/excelhandler/ExcelHandler.js``
 * **Dependencies** :
-    * ``TableJs`` : [TestComplete/Core/TableJs](https://gitlab.viseo.com/testcomplete/core/tablejs)
+    * ``TableJs`` : [@neooblaster/tablejs](https://www.npmjs.com/package/@neooblaster/tablejs)
         * ``./node_modules/@neooblaster/tablejs/Bin/Table.js``
+* **Test Project** : ``./test/ExcelHandlerTest.pjs``
 
 
 
@@ -50,7 +51,7 @@ Script List for the setup :
 * ``./node_modules/@neooblaster/tablejs/Bin/Table.js``
 * ``./node_modules/@testcomplete/excelhandler/ExcelHandler.js``
 
-[TestComplete Library Setup](https://gitlab.viseo.com/testcomplete/documentations/testcompletelibrarysetup)
+[@testcomplete/testcompletelibrarysetup](https://www.npmjs.com/package/@testcomplete/testcompletelibrarysetup)
 
 
 
@@ -79,7 +80,7 @@ For instance, if you have the following **Excel** File :
 const ExcelHandler = require('ExcelHandler');
 
 // Instantiation Step
-let ExcelHdl = new ExcelHdl('<path>').open().sheet('DATA');
+let ExcelHdl = new ExcelHandler('<path>').open().sheet('DATA');
 
 // Dynamic methods available from header line :
 let Warehouse = ExcelHdl.Warehouse(2); // Col A -> Warehouse -> line 2 = SA1
@@ -235,7 +236,7 @@ Notes :
 ``table()`` method returns an `Array` which has all natives JavaScript methods.
 But in reality, the returned object is an instance of ``TableJs`` 
 where all features are
-documented here : [TestComplete/Core/TableJs](https://gitlab.viseo.com/testcomplete/core/tablejs)
+documented here : [@neooblaster/tablejs](https://www.npmjs.com/package/@neooblaster/tablejs)
 
 
 
